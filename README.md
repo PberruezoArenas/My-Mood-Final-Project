@@ -1,81 +1,88 @@
-# WebApp boilerplate with React JS and Flask API
 
-Build web applications using React.js for the front end and python/flask for your backend API.
+Welcome to My Mood, a community for emotional support and mental health aimed at young people and professionals
 
-- Documentation can be found here: https://start.4geeksacademy.com/starters/react-flask
-- Here is a video on [how to use this template](https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b)
-- Integrated with Pipenv for package managing.
-- Fast deployment to heroku [in just a few steps here](https://start.4geeksacademy.com/backend/deploy-heroku-posgres).
-- Use of .env file.
-- SQLAlchemy integration for database abstraction.
 
-### 1) Installation:
+![image](https://github.com/PberruezoArenas/MyMood-BNP/assets/149729949/85b68a6c-04cc-4247-926f-3891b68ac7fe)
 
-> If you use Github Codespaces (recommended) or Gitpod this template will already come with Python, Node and the Posgres Database installed. If you are working locally make sure to install Python 3.10, Node 
 
-It is recomended to install the backend first, make sure you have Python 3.8, Pipenv and a database engine (Posgress recomended)
 
-1. Install the python packages: `$ pipenv install`
-2. Create a .env file based on the .env.example: `$ cp .env.example .env`
-3. Install your database engine and create your database, depending on your database you have to create a DATABASE_URL variable with one of the possible values, make sure you replace the valudes with your database information:
 
-| Engine    | DATABASE_URL                                        |
-| --------- | --------------------------------------------------- |
-| SQLite    | sqlite:////test.db                                  |
-| MySQL     | mysql://username:password@localhost:port/example    |
-| Postgress | postgres://username:password@localhost:5432/example |
+Registration and Login is managed by Formik and Google Auth.
 
-4. Migrate the migrations: `$ pipenv run migrate` (skip if you have not made changes to the models on the `./src/api/models.py`)
-5. Run the migrations: `$ pipenv run upgrade`
-6. Run the application: `$ pipenv run start`
 
-> Note: Codespaces users can connect to psql by typing: `psql -h localhost -U gitpod example`
+![image](https://github.com/PberruezoArenas/MyMood-BNP/assets/149729949/f189d2fd-dcad-4d7f-8279-42eaf2beddfe)
 
-### Undo a migration
 
-You are also able to undo a migration by running
+![image](https://github.com/PberruezoArenas/MyMood-BNP/assets/149729949/48e18a34-b3be-4c15-885f-6c726859d42c)
 
-```sh
-$ pipenv run downgrade
-```
 
-### Backend Populate Table Users
 
-To insert test users in the database execute the following command:
+Record your mood, which will accompany you throughout your entire experience with the app.
 
-```sh
-$ flask insert-test-users 5
-```
 
-And you will see the following message:
+![AnimationMood](https://github.com/PberruezoArenas/MyMood-BNP/assets/149729949/1c9297a4-ad4a-4aee-97ba-1dfc04814866)
 
-```
-  Creating test users
-  test_user1@test.com created.
-  test_user2@test.com created.
-  test_user3@test.com created.
-  test_user4@test.com created.
-  test_user5@test.com created.
-  Users created successfully!
-```
 
-### **Important note for the database and the data inside it**
 
-Every Github codespace environment will have **its own database**, so if you're working with more people eveyone will have a different database and different records inside it. This data **will be lost**, so don't spend too much time manually creating records for testing, instead, you can automate adding records to your database by editing ```commands.py``` file inside ```/src/api``` folder. Edit line 32 function ```insert_test_data``` to insert the data according to your model (use the function ```insert_test_users``` above as an example). Then, all you need to do is run ```pipenv run insert-test-data```.
 
-### Front-End Manual Installation:
+Access responses, advices, and resources tailored to your emotional state.
 
--   Make sure you are using node version 14+ and that you have already successfully installed and runned the backend.
 
-1. Install the packages: `$ npm install`
-2. Start coding! start the webpack dev server `$ npm run start`
+![ResourcesMood](https://github.com/PberruezoArenas/MyMood-BNP/assets/149729949/505af20b-3ef7-4afd-95bd-d1622026acf6)
 
-## Publish your website!
 
-This boilerplate it's 100% read to deploy with Render.com and Heroku in a matter of minutes. Please read the [official documentation about it](https://start.4geeksacademy.com/deploy).
 
-### Contributors
 
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
+Explore our interactive map to see how users around you are feeling.
+The map's location data is obfuscated to protect your privacy.
 
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+
+![InteractiveMapandUserprofile](https://github.com/PberruezoArenas/MyMood-BNP/assets/149729949/239f0a26-465e-42e8-a286-b8e81ea8d50a)
+
+
+
+
+Chat live with active users around you and visit their profile to see which professionals they have had sessions with.
+
+
+![LiveChatAndProfile](https://github.com/PberruezoArenas/MyMood-BNP/assets/149729949/b2b29a9f-9b7e-4635-b806-62ac6ff54844)
+
+
+
+
+
+Access resources provided by our therapists.
+
+
+![ResourcesMood](https://github.com/PberruezoArenas/MyMood-BNP/assets/149729949/2c4d43f4-f17e-4b19-8a43-536603420070)
+
+
+
+Our professionals, where you can view their experience and even request a session.
+
+
+![therapists](https://github.com/PberruezoArenas/MyMood-BNP/assets/149729949/d47d903e-3881-49e2-b4fe-a3c365c21162)
+
+
+
+Frequently Asked Questions
+
+
+![image](https://github.com/PberruezoArenas/MyMood-BNP/assets/149729949/b7f71e18-7895-40e0-954c-c7bb04caf486)
+
+
+
+
+
+The technologies used for developing the app include
+
+
+![image](https://github.com/PberruezoArenas/MyMood-BNP/assets/149729949/cd9b17e8-36a6-4b34-b198-b167ff7a5700)
+
+
+
+Thank you for visiting!
+
+
+
+
