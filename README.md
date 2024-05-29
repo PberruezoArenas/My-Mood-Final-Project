@@ -54,7 +54,8 @@ Chat live with active users around you and visit their profile to see which prof
 Access resources provided by our therapists.
 
 
-![ResourcesMood](https://github.com/PberruezoArenas/MyMood-BNP/assets/149729949/2c4d43f4-f17e-4b19-8a43-536603420070)
+![Resources](https://github.com/PberruezoArenas/My-Mood-Final-Project/assets/149729949/4561d741-4ad9-4bff-9fc4-bf68ade3ebd6)
+
 
 
 
