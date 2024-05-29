@@ -33,7 +33,7 @@ Access responses, advices, and resources tailored to your emotional state.
 
 
 
-Explore our interactive map to see how users around you are feeling.
+Explore our interactive map ( OpenStreetMap & Leaflet ) to see how users around you are feeling.
 The map's location data is obfuscated to protect your privacy.
 
 
@@ -42,7 +42,7 @@ The map's location data is obfuscated to protect your privacy.
 
 
 
-Chat live with active users around you and visit their profile to see which professionals they have had sessions with.
+Chat live with active users around you ( socket io ) and visit their profile to see which professionals they have had sessions with.
 
 
 ![LiveChatAndProfile](https://github.com/PberruezoArenas/MyMood-BNP/assets/149729949/b2b29a9f-9b7e-4635-b806-62ac6ff54844)
